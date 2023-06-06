@@ -3,10 +3,20 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test":"npx playright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mohankumarvs/playwright_ci-cd.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mohankumarvs/playwright_ci-cd.git/issues"
+  },
+  "homepage": "https://github.com/Mohankumarvs/playwright_ci-cd.git#readme",
   "devDependencies": {
     "@playwright/test": "^1.34.3"
   }
