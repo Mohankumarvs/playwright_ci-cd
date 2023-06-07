@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('test', async ({ page }) => {
+test('test', async ({ page ,browserName}) => {
   await page.goto('https://www.saucedemo.com/');
   await page.locator('[data-test="username"]').click();
   await page.locator('[data-test="username"]').fill('standard_user');
@@ -25,4 +25,5 @@ test('test', async ({ page }) => {
   await page.locator('[data-test="continue"]').click();
   await page.locator('[data-test="finish"]').click();
   await page.getByRole('heading', { name: 'Thank you for your order!' }).click();
+  await page.screenshot({ path: 'homepage-'+browserName+'.png', fullPage: true });
 });
