@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test":"npx playright test"
+    "test": "npx playright test"
   },
   "repository": {
     "type": "git",
